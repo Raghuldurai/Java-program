@@ -34,7 +34,7 @@ class Box
 	{
 		return width*height*depth; 
 	}
-
+}
 	class BoxWeight extends Box
 		{ 
 		
@@ -63,7 +63,7 @@ class Box
 				super(len);
 				weight =  m;
 			}
-
+		}
 	class Shipment extends BoxWeight
 		{
 			double cost;
@@ -90,9 +90,7 @@ class Box
 					cost = c;
 			}	
 		}
-	}
-}
-class DemoShipment
+public class DemoShipment
 {
 	public static void main(String args[]) 
 	{
@@ -101,12 +99,12 @@ class DemoShipment
 		double vol;
 		vol =  shipment1.volume();
 		System.out.println("Volume of shipment1 is " + vol);
-		System.out.println("Weight of shipmenti is "+ shipment1.weight); 
+		System.out.println("Weight of shipmenti is "+ shipment1.weight()); 
 		System.out.println("Shipping cost: $" + shipment1.cost);
 		System.out.println();
 		vol  =  shipment2.volume();
 		System.out.println("Volume of shipment2 is " + vol);
-		System.out.println("Weight of shipment2 is" + shipment2.weight);
+		System.out.println("Weight of shipment2 is" + shipment2.weight());
 		System.out.println("Shipping cost: $" + shipment2.cost);
 	}
 }
